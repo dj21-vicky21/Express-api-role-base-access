@@ -1,0 +1,111 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Express role access api",
+    "collectionId": "12584949-17c5-425b-b1f0-aa0626494a4a",
+    "dateExported": "2024-09-26T19:01:34.450Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "7c207a4c-1ee9-4e94-bb10-ddc5194f286b",
+            "name": "auth",
+            "containerId": "",
+            "created": "2024-09-26T14:11:38.770Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "f38e7af0-09ad-4f14-ae7a-ca40c4925979",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-09-26T16:15:52.456Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "c59d10cd-c9fc-47ee-99ae-38577da5ca05",
+            "colId": "12584949-17c5-425b-b1f0-aa0626494a4a",
+            "containerId": "7c207a4c-1ee9-4e94-bb10-ddc5194f286b",
+            "name": "Register",
+            "url": "http://localhost:5002/api/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-09-26T14:11:51.571Z",
+            "modified": "2024-09-26T19:01:23.473Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"Mark\",\n  \"password\":\"superman\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b54719e6-9d9d-4997-b470-b852a8065186",
+            "colId": "12584949-17c5-425b-b1f0-aa0626494a4a",
+            "containerId": "7c207a4c-1ee9-4e94-bb10-ddc5194f286b",
+            "name": "Login",
+            "url": "http://localhost:5002/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-09-26T14:55:37.350Z",
+            "modified": "2024-09-26T19:01:30.047Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"Mark\",\n  \"password\":\"superman\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "4ad801f2-0189-4d8a-ac99-86a8545fe8a2",
+            "colId": "12584949-17c5-425b-b1f0-aa0626494a4a",
+            "containerId": "f38e7af0-09ad-4f14-ae7a-ca40c4925979",
+            "name": "admin",
+            "url": "http://localhost:5002/api/users/admin",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-09-26T16:16:15.289Z",
+            "modified": "2024-09-26T19:00:54.117Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer "
+                }
+            ]
+        },
+        {
+            "_id": "fb398b60-037c-4a43-875f-2254201042d3",
+            "colId": "12584949-17c5-425b-b1f0-aa0626494a4a",
+            "containerId": "f38e7af0-09ad-4f14-ae7a-ca40c4925979",
+            "name": "Manager",
+            "url": "http://localhost:5002/api/users/manager",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-09-26T17:04:31.176Z",
+            "modified": "2024-09-26T19:00:58.342Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer "
+                }
+            ]
+        },
+        {
+            "_id": "f4ff42b8-d570-4423-b079-6005427ddc21",
+            "colId": "12584949-17c5-425b-b1f0-aa0626494a4a",
+            "containerId": "f38e7af0-09ad-4f14-ae7a-ca40c4925979",
+            "name": "User",
+            "url": "http://localhost:5002/api/users/user",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-09-26T17:04:45.979Z",
+            "modified": "2024-09-26T19:01:03.798Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer "
+                }
+            ]
+        }
+    ],
+    "ref": "zas-RHQ7PRytat0KCcW2gDqjfOeaWwd62LehCEmj4K4BDQHd2yfsjo5sgt6FQYs8cqzC6j6xHzCXAn-sdugwnw"
+}
